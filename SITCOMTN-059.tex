@@ -1,10 +1,10 @@
-\documentclass[SE,authoryear,toc]{lsstdoc}
+% SITCOM-679 Jira task
+\documentclass[SE,authoryear,lsstdraft]{lsstdoc}
 \input{meta}
 
 % Package imports go here.
-
+\usepackage{hyperref}
 % Local commands go here.
-
 %If you want glossaries
 %\input{aglossary.tex}
 %\makeglossaries
@@ -15,7 +15,10 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Scot Kleinman
+Scot Kleinman,
+Tony Johnson,
+and
+Patrick Ingraham
 }
 
 \setDocRef{SITCOMTN-059}
@@ -27,7 +30,10 @@ Scot Kleinman
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-The initial charge/mandate for the FAFF Implementation Group.
+The FIG (FAFF Implementation Group) exists to take the recommendations
+of the FAFF reports
+(\citeds{SITCOMTN-025} and \citeds{SITCOMTN-037})
+and implement them. This document provides the group's mandate.
 }
 
 % Change history defined here.
@@ -35,7 +41,7 @@ The initial charge/mandate for the FAFF Implementation Group.
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Scot Kleinman}
+  \addtohist{1}{2023-02-27}{Unreleased.}{Scot Kleinman}
 }
 
 
@@ -46,8 +52,71 @@ The initial charge/mandate for the FAFF Implementation Group.
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
 % use \mkshorttitle to remove the extra pages
 
-% ADD CONTENT HERE
+% ADD CONTENT HERE XXX
 % You can also use the \input command to include several content files.
+\section{Scope}
+The broad directive for the FAFF Implementation Group (FIG) is to
+implement and deliver the project tools and other deliverables recommended
+within the two First-Look Analysis and Feedback Functionality (FAFF)
+Breakout Group reports, \citeds{SITCOMTN-025} and \citeds{SITCOMTN-037}.
+
+\section{Timeline}
+The FIG should complete and make its final deliverables within
+approximately one year of project initiation.  The timeline should be
+clearly described in the first deliverable described below.  This first
+deliverable shall be due within eight weeks of project initiation. 
+Completing work earlier is highly desirable.
+
+
+\section{Sponsor}
+Wil O’Mullane shall be the executive sponsor and the FIG leadership
+team report to Wil O’Mullane.  The executive sponsor provides the
+project top management support and allocation of resources.
+FIG leadership will also work with Robert Lupton and
+Anastasia Alexov given the overlap of goals and
+resources between their domains and the the FIG.
+
+
+
+\section{Product owner}
+Patrick Ingraham shall be the Product Owner.  As such, Patrick will
+advise and consult with the group leadership, but not play an active
+daily role in project management or implementation.  The product owner
+helps establish project priorities and acceptable solutions.
+
+
+\section{FIG leadership team}
+Tony Johnson and Scot Kleinman shall lead the project from a technical
+and managerial perspective respectively. They shall select a core team
+to lead the project, subject to standard resource allocation practices. 
+
+
+\section{Deliverables}
+The FIG is responsible for two sets of deliverables. The first is a
+single report that contains a full project roadmap that is responsive to
+the FAFF report recommendations. This roadmap shall be responsive to the
+recommendations and proposed requirements included in the two FAFF reports
+with any key differences, omissions, and extensions clearly justified. 
+The roadmap should contain an implementable plan with identified resources
+to perform the needed work and preliminary approval from the resources
+and their managers for their time.  The roadmap should clearly describe
+the project scope and deliverables with a set of milestones and clear
+priorities consistent with the timeline for delivery.  The roadmap will
+likely need to identify a common framework for the proceeding work.  The
+report should note areas of critical resource allocation and the risks
+and rewards likely from changes to the proposed resource allocation. 
+If some FAFF recommendations cannot be adequately addressed within the
+timeline, the report should demonstrate how the FAFF-identified need
+can get addressed both in the continued absence of resources and with
+a specific amount of additional resources engaged in the work.  In the
+event of other deviations that prevent completion of a planned activity,
+the FIG should report to the Product Owner, then Sponsor and present a
+suggested alternative path forward.
+
+
+The second set of deliverables shall consist of those specified in the
+sponsor-approved roadmap contained within the first deliverable. 
+
 
 \appendix
 % Include all the relevant bib files.
